@@ -1,12 +1,31 @@
 import { useState } from 'react'
 import './dist/output.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+import IniciarSesion from './layout/IniciarSesion'
+import Layout from './layout/Layout'
+import Inicio from './paginas/Inicio'
+import LoginForm from './paginas/LoginForm'
+import NuevoCliente from './paginas/NuevoCliente'
+import EditarCliente from './paginas/EditarCliente'  
 
 function App() {
 
   return (
-    <div className="App">
-      <h1 className='text-3xl'>CRM React</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        
+        <Route path="/" element={<IniciarSesion />} >
+          <Route index element={<LoginForm />} />
+        </Route>
+
+        <Route path="/clientes" element={<Layout />}>
+          <Route index element={<Inicio />} />
+          <Route path="nuevo" element={<NuevoCliente />} />
+          <Route path="editar/:id" element={<EditarCliente />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
