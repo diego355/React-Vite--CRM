@@ -6,7 +6,7 @@ const NuevoCliente = ({}) =>{
     return(
         <div>
             <h1 className="font-black text-4xl text-blue-900">Nuevo cliente...</h1>
-            <p>Llene los datos para crear un nuevo cliente</p>
+            <p className="mt-3 ">Llene los datos para crear un nuevo cliente</p>
             <Formulario />
         </div>
     )
