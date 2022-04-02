@@ -1,9 +1,12 @@
 
+import { useNavigate } from 'react-router-dom'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
 import Mensaje from './Mensaje'
 
 const Formulario = ({}) => {
+
+    const navigate = useNavigate()
 
     const nuevoClienteSchema = Yup.object().shape({
         nombre: Yup.string()
@@ -24,8 +27,24 @@ const Formulario = ({}) => {
         notas: ''
     })
     
-    const handleSubmit = ( values ) => {
-        console.log(values)
+    const handleSubmit = async ( values ) => {
+        //console.log(values)
+        try{
+            const url= 'http://localhost:4000/clientes'
+            const respuesta = await fetch(url, {
+                method: 'POST',
+                body: JSON.stringify(values),
+                headers: {"Content-Type": "application/json"}
+            })
+            const resultado = await respuesta.json()
+            console.log(resultado)
+
+            navigate('/clientes')
+
+        }
+        catch (error){
+            console.log(error)
+        }
     }
 
         
@@ -41,8 +60,9 @@ const Formulario = ({}) => {
                     telefono: '',
                     notas: ''
                 }}
-                onSubmit={ ( valuesasd )=>{
-                    handleSubmit(valuesasd )
+                onSubmit={ async  ( valuesasd, {resetForm} )=>{
+                    await handleSubmit(valuesasd )
+                    resetForm()
                 }}
                 validationSchema={ nuevoClienteSchema }
             >   

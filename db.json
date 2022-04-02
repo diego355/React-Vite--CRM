@@ -1,19 +1,48 @@
 {
-  "posts": [
+  "clientes": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "nombre": "Diego"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "nombre": "Diego",
+      "empresa": "Asd",
+      "email": "diego355@gmail.com",
+      "telefono": "26000000",
+      "notas": "asd",
+      "id": 2
+    },
+    {
+      "nombre": "Diego",
+      "empresa": "Asd",
+      "email": "diego355@gmail.com",
+      "telefono": "26000000",
+      "notas": "asd",
+      "id": 3
+    },
+    {
+      "nombre": "Diego",
+      "empresa": "Asd",
+      "email": "diego355@gmail.com",
+      "telefono": "26000000",
+      "notas": "asd",
+      "id": 4
+    },
+    {
+      "nombre": "Diego",
+      "empresa": "Asd",
+      "email": "diego355@gmail.com",
+      "telefono": "26000000",
+      "notas": "asd",
+      "id": 5
+    },
+    {
+      "nombre": "RAÚL ALEJANDRO ",
+      "empresa": "Hermes Soluciones de Internet",
+      "email": "d.rojas@hermes-soft.com",
+      "telefono": "22349900",
+      "notas": "",
+      "id": 6
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
