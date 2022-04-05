@@ -8,7 +8,7 @@ import Inicio from './paginas/Inicio'
 import LoginForm from './paginas/LoginForm'
 import NuevoCliente from './paginas/NuevoCliente'
 import EditarCliente from './paginas/EditarCliente'  
-import VerCliente from './paginas/EditarCliente'
+import VerCliente from './paginas/VerCliente'
 
 function App() {
 

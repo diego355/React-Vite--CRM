@@ -11,9 +11,9 @@ const Inicio = ({}) => {
             try{
                 const url = 'http://localhost:4000/clientes'
                 const respuesta = await fetch(url) //GET no ocupa más parámetros o headers
-                console.log(respuesta)
+                //console.log(respuesta)
                 const resultado = await respuesta.json()
-                console.log(resultado)
+                //console.log(resultado)
 
                 setClientes(resultado)
             }
