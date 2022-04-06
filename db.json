@@ -23,6 +23,14 @@
       "telefono": "22349900",
       "notas": "",
       "id": 6
+    },
+    {
+      "nombre": "test",
+      "empresa": "test",
+      "email": "administrator@cso.go.cr",
+      "telefono": "22227033",
+      "notas": "",
+      "id": 7
     }
   ]
 }
