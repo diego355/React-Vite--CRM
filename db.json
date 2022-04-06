@@ -1,32 +1,12 @@
 {
   "clientes": [
     {
-      "id": 1,
-      "nombre": "Diego"
-    },
-    {
       "nombre": "Diego",
-      "empresa": "Asd",
-      "email": "diego355@gmail.com",
-      "telefono": "26000000",
-      "notas": "asd",
-      "id": 2
-    },
-    {
-      "nombre": "Diego",
-      "empresa": "Asd",
-      "email": "diego355@gmail.com",
-      "telefono": "26000000",
-      "notas": "asd",
-      "id": 3
-    },
-    {
-      "nombre": "Diego",
-      "empresa": "Asd",
-      "email": "diego355@gmail.com",
-      "telefono": "26000000",
-      "notas": "asd",
-      "id": 4
+      "empresa": "test",
+      "email": "d.rojas@hermes-soft.com",
+      "telefono": "22349900",
+      "notas": "",
+      "id": 1
     },
     {
       "nombre": "Diego",
